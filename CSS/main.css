@@ -212,8 +212,8 @@ header .container .stats .info {
 .info .profile-pic .outer {
   width: 100% !important;
   height: 100% !important;
-  max-width: 150px !important; /* any size */
-  max-height: 150px !important; /* any size */
+  max-width: 65px !important; 
+  max-height: 65px !important; 
   margin: auto;
   background-color: #6eafd4;
   border-radius: 100%;
@@ -221,7 +221,8 @@ header .container .stats .info {
   }
 
   .info .profile-pic .outer #p-pic {
-    width: 100%;
+    max-width: 100%;
+    height: 65px;
     border-radius: 50%;
   }
   
@@ -336,7 +337,7 @@ svg {
 
 .tasks-area {
   color: var(--clr-grey-1);
-  padding-top: 20px;
+  padding-top: 9%;
 }
 
 .tasks-area > .container {
@@ -487,7 +488,8 @@ svg {
 .adding-task-container,
 .showing-results {
   position: absolute;
-  top: -100%;
+  top: -120%;
+  opacity: 0;
   background-color: var(--overlay-clr-2);
   width: 100vw;
   height: 100vh;
@@ -497,6 +499,7 @@ svg {
 .adding-task-container.add-new,
 .showing-results.add-new {
   top: 0;
+  opacity: 1;
 }
 
 .adding-task-container .container{
