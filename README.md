@@ -26,7 +26,7 @@ This is a To-Do App built using vannila JavaScript and CSS
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site URL](https://husamasaad.github.io/things-to-do/)
 
 ## My process
 
