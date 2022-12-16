@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things To-Do</title>
+  <!-- Reset Browser styling -->
+  <link rel="stylesheet" href="./CSS/reseter.css">
+  <!-- main css file -->
+  <link rel="stylesheet" href="./CSS/main.css">
+  <!-- font-awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <script src="https://kit.fontawesome.com/694772d257.js"   crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="adding-task-container">
+    <div class="container">  
+      <form id="the-new-task" onsubmit="event.preventDefault();">
+        <div class="heading">
+          <h3>new Task</h3>
+          <span id="close-box">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <fieldset>
+          <input placeholder="What do you want to do?" type="text" required autofocus autocomplete="none" id="new-title">
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Describe the task and why you want to do it, the more you know why the harder you will work!" id="new-details"></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="new-task-btn">Add</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div class="showing-results">
+    <div class="container">
+      <div class="r-info">
+        <img id="r-p-pic" src="./imgs/PngItem_1468479.png" alt="">
+        <h3 id="r-username">husam asaad</h3>
+        <h4>Well Done</h4>
+        <p>remember to always challange yourself and push your limts, You did great today and tomorrow will do better!</p>
+        <span id="date">16 dec 2022</span>
+        <div class="new-list">
+          <button id="clear-btn">Start Again</button>
+        </div>
+      </div>
+      <div class="r-stats">
+        <div class="r-stat">
+          <h4 id="r-tasks">10</h4>
+          <p>tasks</p>
+        </div>
+        <div class="r-stat">
+          <h4 id="r-done">100%</h4>
+          <p>Done</p>
+        </div>
+        <div class="r-stat">
+          <h4 id="r-time">8 hours</h4>
+          <p>Work</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <main>
+    <!-- start of header -->
+    <header>
+      <div class="container">
+        <div class="stats">
+          <div class="info">
+            <div class="profile-pic">
+              <div class="outer">
+                <img id="p-pic" src="./imgs/PngItem_1468479.png" alt="">
+                <div class="inner">
+                <input class="inputfile" type="file" name="pic" accept="image/*">
+                <label>
+                  <i class="fa-solid fa-image"></i>
+                </label>
+                </div>
+            </div>
+            </div>
+            <h4 id="username">your name</h4>
+          </div>
+          <div class="progres">
+            <svg>
+              <circle class="bg" cx="32.5" cy="32.5" r="28" />
+              <circle class="meter-1" cx="32.5" cy="32.5" r="28" 
+              style="stroke-dashoffset: 173;"/>
+            </svg>
+            <span id="done">
+              <span data-prog= "0" >0</span>% <br>done
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- start of tasks area -->
+    <section class="tasks-area">
+      <div class="container">
+        <h2>Tasks:</h2>
+        <div class="tasks-container">
+          <p class="no-tasks">No Tasks For Today?</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="options">
+            <span id="end-day">
+              <i class="fa-regular fa-calendar-check"></i>
+              End the Day
+            </span>
+          </div>
+          <button type="button" id="add-task">+</button>
+        </div>
+      </div>
+    </section>
+    <!-- end of tasks area -->
+    
+  </main>
+  <script src="./main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
